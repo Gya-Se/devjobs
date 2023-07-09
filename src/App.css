@@ -2,8 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-image{
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --violet: #5964e0;
+  --white: #ffffff;
+  --light-violet: #939bf4;
+  --light-grey: #f4f6f8;
+  --very-dark-blue: #19202d;
+  --grey: #9daec2;
+  --midnight: #121721;
+  --dark-grey: #6e8098;
+}
+
+#root {
+  font-family: "kumbh sans";
+}
+
+.bg-image {
+  background-image: url(../src/starter-code/assets/mobile/bg-pattern-header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 160px;
+}
+
+.q {
+  border: 1px solid red;
+}
+
+
+@media screen and (min-width: 768px) {
+  .bg-image {
+    background-image: url(../src/starter-code/assets/tablet/bg-pattern-header.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 160px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bg-image {
     background-image: url(../src/starter-code/assets/desktop/bg-pattern-header.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 160px;
+  }
 }

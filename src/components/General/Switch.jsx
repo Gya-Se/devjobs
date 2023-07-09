@@ -6,21 +6,23 @@ export default function Switcher() {
     const [darkSide, setDarkSide] = useState(
         colorTheme === "light" ? true : false
     );
-    const toggleDarkMode = (checked) => {
+    const toggleDarkMode  = (event) => {
         setTheme(colorTheme);
-        setDarkSide(checked);
+        setDarkSide(event.target.checked);
     };
+
+
     return (
         <>
             <Toggle
-                backgroundColorChecked = {"#fff"}
-                backgroundColorUnchecked = {"#fff"}
-                backgroundColorButton = {"#333"}
+                backgroundColorChecked={"#fff"}
+                backgroundColorUnchecked={"#fff"}
+                backgroundColorButton={"#5964E0"}
                 sliderWidth={15}
                 sliderHeight={15}
-                width ={35}
-                height ={22}
-                translate ={13}
+                width={35}
+                height={22}
+                translate={13}
                 checked={darkSide}
                 onChange={toggleDarkMode}
             />
