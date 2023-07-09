@@ -1,3 +1,33 @@
+# Website created with React
+
+### Folder
+
+#### `devjobs` - Holds the client application
+
+- #### `public` - This holds all of our static files
+- #### `src`
+  - #### `starter-code` - This folder holds assets such as images, docs, and fonts
+  - #### `components` - This folder holds all of the different components that will make up our views
+  - #### `pages` - These represent a unique page on the website i.e. Home or Job. These are still normal react components.
+  - #### `App.js` - This is what renders all of our browser routes and different views
+  - #### `index.js` - This is what renders the react app by rendering App.js, should not change
+- #### `package-lock.json` - Defines npm behaviors and packages for the client
+- #### `package.json` - Defines npm behaviors like the scripts defined in the next section of the README
+
+#### `.gitignore` - Tells git which files to ignore
+
+#### `README` - This file!
+
+#### The website is fully functional (with the exception `search, filter and checkbox` not being functional yet) 
+#### and fully dynamic
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,6 +98,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-“Never memorize something that you can look up.” - Albert Einstein
