@@ -1,14 +1,14 @@
 @import "../App.css";
 
 .location {
-  color: var(--violet);
+  color: red;
 }
 
 .grey-text {
-    color: var(--grey);
+    color: yellow;
 }
 
 .job-text:hover {
-color: var(--dark-grey);
+color: green;
 cursor: pointer;
 }

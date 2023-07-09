@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../../styles/job.css'
 import styles from '../../styles/styles'
 import Data from '../../starter-code/data.json'
@@ -22,18 +23,20 @@ const Job = () => {
                                 </div>
                                 <div className={`${styles.toggleMid} p-6 mt-6 rounded-lg`}>
                                     <div className='mt-3'>
-                                        <div className='grey-text'>
+                                        <div className='text-[#9daec2]'>
                                             <span className='pr-2'>{data.postedAt}</span>
                                             <span className='text-2xl font-black'>.</span>
                                             <span className='pl-2'>{data.contract}</span>
                                         </div>
-                                        <div className={`${styles.textToggleWhite} text-xl job-text font-bold my-2`}>
-                                            {data.position}
+                                        <div className={`${styles.textToggleWhite} text-xl cursor-pointer font-bold my-2`}>
+                                            <Link to={data.id} className='hover:text-[#9daec2]'>
+                                                {data.position}
+                                            </Link>
                                         </div>
-                                        <div className='grey-text'>
+                                        <div className='text-[#9daec2]'>
                                             {data.company}
                                         </div>
-                                        <div className='location mt-8 mb-5 text-sm font-bold'>
+                                        <div className='text-[#5964e0] mt-8 mb-5 text-sm font-bold'>
                                             {data.location}
                                         </div>
                                     </div>
@@ -43,7 +46,7 @@ const Job = () => {
                     })
                 }
             </div>
-            {/*  */}
+            {/*Load more button  */}
             <div className={`${styles.centerItem} mt-12`}>
                 <button onClick={handleMoreImage} className={`${styles.primaryButton}`}>
                     Load more

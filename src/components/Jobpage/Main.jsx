@@ -5,23 +5,23 @@ import styles from '../../styles/styles'
 const Main = () => {
     return (
         <>
-            <div className={`${styles.toggleMid} rounded-lg p-16`}>
-                <div className={`${styles.centerItem} flex`}>
-                    <div className='flex-grow'>
-                        <div className='grey-text'>
+            <div className={`${styles.toggleMid} rounded-lg p-16 md:p-12 sm:p-8`}>
+                <div className={`${styles.centerItem} flex sm:flex-col`}>
+                    <div className='flex-grow sm:w-full'>
+                        <div className='text-[#9daec2]'>
                             <span className='pr-2'>Time</span>
                             <span className='text-2xl font-black'>.</span>
                             <span className='pl-2'>Full/Part</span>
                         </div>
-                        <div className= {`${styles.textToggleWhite} text-2xl job-text font-bold my-2`}>
+                        <div className= {`${styles.textToggleWhite} text-2xl font-bold my-2`}>
                             Job Title - eg. Senior Dev
                         </div>
-                        <div className='location mt-3 text-sm font-bold'>
+                        <div className='text-[#5964e0] mt-3 text-sm font-bold'>
                             Location
                         </div>
                     </div>
-                    <div>
-                        <button className={`${styles.primaryButton}`}>
+                    <div className={`${styles.applyToggle}`}>
+                        <button className={`${styles.primaryButton} sm:w-full`}>
                             Apply Now
                         </button>
                     </div>

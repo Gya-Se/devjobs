@@ -13,13 +13,13 @@ const JobPage = () => {
                 <div className={`${styles.wrapper}`}>
                         <Header />
                     </div>
-                    <div className={`${styles.jobWrapper}`}>
+                    <div className={`${styles.jobWrapper} ${styles.smWrapper}`}>
                         <Pagebar />
                     </div>
                 </div>
             </div>
-            <div className='mt-32'></div>
-            <div className={`${styles.jobWrapper}`}>
+            <div className='mt-32 sm:mt-56'></div>
+            <div className={`${styles.jobWrapper} ${styles.smWrapper}`}>
                 <Main />
             </div>
             <Footer />

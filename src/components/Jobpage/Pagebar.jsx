@@ -6,20 +6,20 @@ import styles from '../../styles/styles'
 const Searchbar = () => {
     return (
         <>
-            <div className={`${styles.toggleMid} rounded-lg flex mt-14`}>
-                <div className='sm:violet bg-yellow-500 pr-2 w-32 h-32 flex justify-center rounded-l items-center'>
+            <div className={`${styles.toggleMid} ${styles.centerItem} rounded-lg flex mt-14 sm:flex-col sm:mt-[4.5rem] sm:relative sm:pb-8`}>
+                <div className={`${styles.pageBarImage} ${styles.centerItem} q sm:absolute sm:-top-5`}>
                     <img src={scoot} width={100} alt='scoot' />
                 </div>
-                <div className='flex items-center flex-grow px-16  justify-between'>
+                <div className={`${styles.centerItem} flex flex-grow px-16 md:px-8 sm:flex-col sm:px-0 sm:w-full sm:mt-12`}>
                     <div className='flex-grow'>
                         <div className={`${styles.textToggleWhite} text-2xl font-semibold`}>
                             Business Name
                         </div>
-                        <div className='grey-text'>
+                        <div className={`sm:${styles.centerItem} text-[#9daec2] sm:mt-2`}>
                             website
                         </div>
                     </div>
-                    <div className=''>
+                    <div className='sm:mt-5'>
                         <button className={`${styles.secondaryButton} ${styles.secondaryBtnToggle}`}>
                             Company Site
                         </button>
