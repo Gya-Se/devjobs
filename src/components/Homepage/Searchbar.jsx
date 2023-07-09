@@ -25,7 +25,7 @@ const Searchbar = () => {
                     </div>
                 </div>
                 <div className= {`${styles.toggleBorder} ${styles.textBoxCont} p-2 justify-between`}>
-                    <div >
+                    <div className={`${styles.centerItem}`} >
                         <label className='font-medium checkbox dark:text-[#ffffff]'>
                             <input className='mr-2 p-3' type='checkbox' />
                             <span class="checkmark"></span>

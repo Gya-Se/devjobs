@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/job" element={<JobPage />} />
+          <Route path="/job/:id" element={<JobPage />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../../styles/job.css'
 import styles from '../../styles/styles'
 import Data from '../../starter-code/data.json'
 
 
 const Job = () => {
-    const imagePerPage = 12
-    const [next, setNext] = useState(imagePerPage);
+    const jobsPerPage = 12
+    const [next, setNext] = useState(jobsPerPage);
     const handleMoreImage = () => {
-        setNext(next + imagePerPage);
+        setNext(next + jobsPerPage);
     };
     return (
         <>
@@ -19,7 +18,7 @@ const Job = () => {
                         return (
                             <div className='relative' key={data.id}>
                                 <div style={{ backgroundColor: `${data.logoBackground}` }} className={`${styles.centerItem} w-[45px] h-[45px] absolute top-0 ml-6 mb-5 pl-2 rounded-2xl`}>
-                                    <img src={data.logo} className="pr-2" alt="logo" />
+                                    <img src={data.logo} className="pr-2" alt={data.company} />
                                 </div>
                                 <div className={`${styles.toggleMid} p-6 mt-6 rounded-lg`}>
                                     <div className='mt-3'>
@@ -29,7 +28,7 @@ const Job = () => {
                                             <span className='pl-2'>{data.contract}</span>
                                         </div>
                                         <div className={`${styles.textToggleWhite} text-xl cursor-pointer font-bold my-2`}>
-                                            <Link to={data.id} className='hover:text-[#9daec2]'>
+                                            <Link to={"/job/" + data.id} className='hover:text-[#9daec2]'>
                                                 {data.position}
                                             </Link>
                                         </div>
