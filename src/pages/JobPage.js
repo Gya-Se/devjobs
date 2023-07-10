@@ -10,7 +10,7 @@ const JobPage = () => {
         <div className={`${styles.toggleDark}`}>
             <div className={`${styles.bgImage}`}>
                 <div className={`${styles.absoluteTop}`}>
-                <div className={`${styles.wrapper}`}>
+                    <div className={`${styles.wrapper}`}>
                         <Header />
                     </div>
                     <div className={`${styles.jobWrapper} ${styles.smWrapper}`}>
