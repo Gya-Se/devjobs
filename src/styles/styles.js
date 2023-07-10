@@ -31,6 +31,7 @@ const styles = {
 
     //center an item
     centerItem: `flex  items-center justify-center`,
+    smCenterItem: `sm:flex  sm:items-center sm:justify-center`,
 
     //page containers
     wrapper: `w-4/5 mx-auto`,

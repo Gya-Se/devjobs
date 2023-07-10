@@ -9,7 +9,6 @@ const Footer = () => {
 
     return (
         <>
-
             <div>
                 <div className='mt-16'></div>
                 {Data && Data.slice((jobId - 1), jobId).map((data) => {

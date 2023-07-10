@@ -15,14 +15,13 @@ const Searchbar = () => {
                     <div key={data.id} className={`${styles.toggleMid} ${styles.centerItem} rounded-lg flex mt-14 sm:flex-col sm:mt-[4.5rem] sm:relative sm:pb-8`}>
                         <div style={{ backgroundColor: `${data.logoBackground}` }} className={`${styles.pageBarImage} ${styles.centerItem} sm:absolute sm:-top-5`}>
                             <img src={data.logo} width={100} alt={data.company} />
-                            {console.log(data.logo)}
                         </div>
                         <div className={`${styles.centerItem} flex flex-grow px-16 md:px-8 sm:flex-col sm:px-0 sm:w-full sm:mt-12`}>
-                            <div className='flex-grow'>
-                                <div className={`${styles.textToggleWhite} text-2xl font-semibold`}>
+                            <div className={`flex-grow`}>
+                                <div className={`${styles.smCenterItem} ${styles.textToggleWhite} text-2xl font-semibold`}>
                                     {data.company}
                                 </div>
-                                <div className={`sm:${styles.centerItem} text-[#9daec2] sm:mt-2`}>
+                                <div className={`${styles.smCenterItem} text-[#9daec2] sm:mt-2`}>
                                     {data.website}
                                 </div>
                             </div>
