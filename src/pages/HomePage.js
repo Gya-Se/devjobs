@@ -29,7 +29,7 @@ const HomePage = () => {
         <div className={`${styles.absoluteTop}`}>
           <div className={`${styles.wrapper}`}>
             <Header />
-            {windowSize.innerWidth > 768 ? (
+            {windowSize.innerWidth > 767 ? (
               < Searchbar />
             ) : (
               < Mobilesearch />

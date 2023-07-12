@@ -4,9 +4,16 @@ import filter from '../../starter-code/assets/mobile/icon-filter.svg'
 import location from '../../starter-code/assets/desktop/icon-location.svg'
 import styles from '../../styles/styles'
 import '../../styles/checkbox.css'
+import Data from '../../starter-code/data.json'
 
 const Mobilesearch = () => {
     const [showModal, setShowModal] = useState(false);
+
+    // const handleSubmit = (e) => e.preventDefault()
+
+    // const handleSearchChange = (e) => {
+    //     const resultsArray = Data.filter(data => data.company.includes(e.target.value) || data.position.includes(e.target.value))
+    // }
 
     return (
         <>
@@ -28,9 +35,15 @@ const Mobilesearch = () => {
             {showModal ? (
                 <>
                     <div className={`${styles.modal}`} >
-                        <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                        <div className="relative w-4/5 my-6 mx-auto max-w-full">
                             {/*modal content*/}
-                            <div className={`${styles.modalBox} ${styles.toggleMid}`}>
+                            <div className={`${styles.modalBox} ${styles.toggleMid} relative`}>
+
+                                <div className="flex items-center justify-end right-5 top-2 font-black text-[#5964e0] absolute">
+                                    <button className={``} onClick={() => setShowModal(false)} >
+                                        X
+                                    </button>
+                                </div>
                                 {/*location filter*/}
                                 <div className="flex items-start justify-between p-5 border-b border-solid dark:border-slate-700 rounded-t">
                                     <div className={`${styles.toggleBorder} ${styles.textBoxCont} p-2`}>
@@ -61,7 +74,7 @@ const Mobilesearch = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                    <div className="opacity-[0.5] fixed inset-0 z-40 bg-black"></div>
                 </>
             ) : null}
         </>
