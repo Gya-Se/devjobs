@@ -4,7 +4,7 @@ import filter from '../../starter-code/assets/mobile/icon-filter.svg'
 import location from '../../starter-code/assets/desktop/icon-location.svg'
 import styles from '../../styles/styles'
 import '../../styles/checkbox.css'
-import Data from '../../starter-code/data.json'
+// import Data from '../../starter-code/data.json'
 
 const Mobilesearch = () => {
     const [showModal, setShowModal] = useState(false);
@@ -34,8 +34,9 @@ const Mobilesearch = () => {
             </div>
             {showModal ? (
                 <>
-                    <div className={`${styles.modal}`} >
+                    <div className={`${styles.modal}`}>
                         <div className="relative w-4/5 my-6 mx-auto max-w-full">
+
                             {/*modal content*/}
                             <div className={`${styles.modalBox} ${styles.toggleMid} relative`}>
 
@@ -44,6 +45,7 @@ const Mobilesearch = () => {
                                         X
                                     </button>
                                 </div>
+                                
                                 {/*location filter*/}
                                 <div className="flex items-start justify-between p-5 border-b border-solid dark:border-slate-700 rounded-t">
                                     <div className={`${styles.toggleBorder} ${styles.textBoxCont} p-2`}>
@@ -74,7 +76,7 @@ const Mobilesearch = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="opacity-[0.5] fixed inset-0 z-40 bg-black"></div>
+                    <div className="opacity-[0.5] fixed inset-0 z-40 bg-black" ></div>
                 </>
             ) : null}
         </>
